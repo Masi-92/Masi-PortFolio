@@ -1,0 +1,30 @@
+
+.Nav_ulParent{
+
+    background: rgba(0, 0, 0, 0.128);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 95%;
+    top: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-radius: 3rem;
+}
+
+.Nav_ulParent li a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+.Nav_ulParent li a:hover {
+    background: rgba(0, 0, 0, 0.3);
+
+}
