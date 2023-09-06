@@ -2,7 +2,7 @@
 import IMG1 from '../Images/easyliefer.png';
 import IMG2 from '../Images/alpaca.png'
 import Layout from "../Layout/Layout";
-import Navigation from './Navigation'
+//import Navigation from './Navigation'
 //import { Link } from "react-router-dom";
 
 function Portfolio() {
@@ -13,8 +13,8 @@ function Portfolio() {
       Imag: IMG1,
       description: "Heute bestellen, morgen bekommen",
       technologies: "css / scss",
-      github: "#",
-      link: "#",
+      github: "https://github.com/Masi-92/Easy-lifer-Porjct",
+      link: "https://masi-92.github.io/Easy-lifer-Porjct/",
     },
     {
       id: 2,
@@ -22,8 +22,8 @@ function Portfolio() {
       Imag: IMG2,
       description: "Tourismus Webseite",
       technologies: "css / scss",
-      github: "#",
-      link: "#",
+      github: "https://github.com/Masi-92/alpaca-project",
+      link: "https://masi-92.github.io/alpaca-project/",
     },
   ];
 

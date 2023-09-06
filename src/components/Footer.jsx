@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub ,faFacebook,faSquareInstagram  } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  let getYear = () => {
+    let currentYear = new Date().getFullYear();
+    return currentYear;
+  }
 
   return (
   <footer className={footerStyle.footer_section} >
@@ -27,6 +31,9 @@ const Footer = () => {
 
 
 </div>
+<div className="footer__copyright">
+        <small>&copy; ET {getYear()}. All rights reserved.</small>
+      </div>
   </footer>
   );
 };

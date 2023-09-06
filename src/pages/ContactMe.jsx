@@ -12,28 +12,24 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
-    // Hier könntest du den Code zum Versenden der E-Mail einfügen, falls benötigt.
-    // Du kannst stattdessen auch eine andere Methode verwenden, z.B. die HTML5-Formularaktion.
-    // Ein Beispiel für die HTML5-Formularaktion findest du weiter unten.
+ 
     e.target.reset();
   };
 
-  const handleClick = () => {
-    setMessage(true);
-  };
+  // const handleClick = () => {
+  //   setMessage(true);
+  // };
 
   return (
-    <section className={`${contactStyle.sectionTitle}`}>
+    <section id="contact">
       <h5>Get In Touch </h5>
-      <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :
-      </h5>
       <h2>Contact Me</h2>
-      <div className={`${contactStyle.contact__container} `}>
+      <div className={`${contactStyle.container} ${contactStyle.contact__container} `}>
         <div className={contactStyle.contact__options}>
           <article className={contactStyle.contact__option}>
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon 
+            icon={faEnvelope} 
+            className={contactStyle.contact__option_icon} />
             <h4>Email</h4>
             <h5>masoud.izadi92@gmail.com</h5>
             <a href="mailto:masoud.izadi92@gmail.com">Send a message</a>
@@ -58,20 +54,20 @@ const ContactMe = () => {
             name="message"
             required
           ></textarea>
+         <button type="submit" className={`${contactStyle.btn_content} ${contactStyle.btn_primary_content}`}>
+            Send Message
+          </button>
+          
           {message && (
             <span className={contactStyle.message}>
               Thanks for your message! I will write you back!
             </span>
           )}
-          <div className={contactStyle.sendBtn}>
-            <button type="submit" className={contactStyle.Btn}>
-              Send message
-            </button>
-          </div>
+      
         </form>
       </div>
-      <Navigation />
-      <Footer />
+    <Navigation />
+      <Footer /> 
     </section>
   );
 };
