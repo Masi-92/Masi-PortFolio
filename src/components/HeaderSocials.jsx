@@ -10,7 +10,7 @@ const HeaderSocials = () => {
     <div  className={HeaderStyle.header__socials}>
     
   <Link to ='#'>   <FontAwesomeIcon icon={faLinkedin}/> </Link>
-  <Link to = '#'>   <FontAwesomeIcon icon={faSquareGithub}/> </Link>
+  <Link to = 'https://github.com/Masi-92'>   <FontAwesomeIcon icon={faSquareGithub}/> </Link>
   <Link to = '#' >   <FontAwesomeIcon icon={faAngellist}/> </Link>
    
     

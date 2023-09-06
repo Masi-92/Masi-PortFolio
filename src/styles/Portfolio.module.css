@@ -49,7 +49,7 @@
     display: inline-block;
     width: 10rem;
     padding: .05rem .0544rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border-radius: 10rem;
     color: #fff;
     text-transform: uppercase;

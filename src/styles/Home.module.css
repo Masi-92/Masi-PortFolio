@@ -14,12 +14,12 @@ header {
   
   .header__socials {
     display: flex;
-    flex-direction: column;
+   flex-direction: column; 
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.9rem;
     position: absolute;
-    left: 5rem;
-    bottom: 1rem;
+    left: .8rem;
+    bottom: .2rem;
   }
   
   .header__socials::after {
@@ -29,14 +29,7 @@ header {
     background: var(--color-primary);
   }
   
-  .scroll__down {
-    position: absolute;
-    right: 5rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;                                
-    font-size: 0.9rem;
-  }
+
   .span{
 
     font-size: 10rem;
@@ -47,6 +40,156 @@ header {
 .fade_in {
   animation: fadeIn 3.5s ease-in;
   opacity: 2;
+}
+
+
+.my__infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 3rem; 
+  justify-items: center; 
+  text-align:left;
+  margin-left:3rem ;
+  
+}
+
+
+.overlay h1  {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.3s ease;
+}
+
+.overlay h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+   
+}
+
+.overlay h1:hover::before {
+  width: 100%; 
+  
+}
+.overlay h1:hover{
+  color:var(--color-primary);
+}
+
+.home__image{
+  border-radius: 50%;
+  box-shadow: #fff 0 -1px 4px, #4db5ff 0 -2px 9px, #00a6ff 0 -10px 20px,
+  #2c2c6c 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+ .my__infos:hover .info_service {
+  bottom: 10%;
+  opacity: 1;
+}
+
+
+
+.info__intro {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+  text-transform: uppercase;
+}
+
+.info__intro::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.info__intro:hover::before {
+  width: 100%;
+ 
+}
+.info__intro:hover{
+  color: var(--color-primary) ;
+}
+
+.info_service{
+  width: 2rem;
+}
+
+
+
+
+.contact__buttons button {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+.btn_content {
+  display: inline-block;
+  width: 10rem;
+  margin: .5rem;
+  padding: 0.05rem .5rem;
+  border-radius: 1rem;
+  color: #b0a7a7;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.btn_content:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#1e1ecf;
+  border-radius: 1rem;
+  z-index: -2;
+}
+
+.btn_content:before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #348ddf;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.btn_content:hover {
+  color: #d5d5d5;
+}
+.btn_content:hover:before {
+  width: 100%;
 }
 
 @keyframes fadeIn {
@@ -61,20 +204,41 @@ header {
 
 
 
-  @media screen and (max-width: 1024px){
-    header {
-      padding-top: 3rem;
-    }
-  
-    section {
-      margin-top: 6rem;
-    }
+@media screen and (max-width: 1024px) {
+  header {
+    padding-top: 3rem;
   }
-  
-  @media screen and (max-width: 600px){
-  
-    .header__socials,
-    .scroll__down {
-      display: none;
-    }
+
+  section {
+    margin-top: 6rem;
   }
+
+  .header__container {
+    text-align: center;
+  }
+
+
+  .home__image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; 
+  }
+
+  .my__infos {
+    text-align: center;
+  }
+}
+.my__infos {
+
+@media screen and (max-width: 1024px) {
+  
+  grid-template-columns:repeat(2, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+  
+  grid-template-columns: 1fr; 
+}
+
+
+}

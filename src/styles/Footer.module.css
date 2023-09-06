@@ -45,10 +45,11 @@ footer a {
     border-color: var(--color-bg);
 }
 
-.footer__copyright {
+.Date__Year {
     margin-bottom: 4rem;
-    color: var(--color-bg);
-}
+    color: #1f1f38;
+    font-weight: 900;
+font-size: larger;}
 
 @media screen and (max-width: 600px){
     .permalinks {
