@@ -72,6 +72,25 @@
     color: var(--color-light);
 }
 
+
+.textStyle {
+    margin-top: 2rem;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+
+.textStyle:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+
 @media screen and (max-width: 1024px){
     .about__container {
         grid-template-columns: 1fr;

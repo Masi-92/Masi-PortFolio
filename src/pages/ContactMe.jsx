@@ -12,24 +12,24 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
- 
     e.target.reset();
   };
 
-  // const handleClick = () => {
-  //   setMessage(true);
-  // };
+  const handleClick = () => {
+    setMessage(false);
+  };
 
   return (
     <section id="contact">
-      <h5>Get In Touch </h5>
+      <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className={`${contactStyle.container} ${contactStyle.contact__container} `}>
         <div className={contactStyle.contact__options}>
           <article className={contactStyle.contact__option}>
-            <FontAwesomeIcon 
-            icon={faEnvelope} 
-            className={contactStyle.contact__option_icon} />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className={contactStyle.contact__option_icon}
+            />
             <h4>Email</h4>
             <h5>masoud.izadi92@gmail.com</h5>
             <a href="mailto:masoud.izadi92@gmail.com">Send a message</a>
@@ -54,20 +54,26 @@ const ContactMe = () => {
             name="message"
             required
           ></textarea>
-         <button type="submit" className={`${contactStyle.btn_content} ${contactStyle.btn_primary_content}`}>
-            Send Message
-          </button>
-          
+          <div className={contactStyle.contact__buttons}>
+            <button
+              type="submit"
+              className={`${contactStyle.btn_content} `}
+            >
+              Send Message
+            </button>
+            <button onClick={handleClick} className={contactStyle.btn_content}>
+              Reset
+            </button>
+          </div>
           {message && (
             <span className={contactStyle.message}>
               Thanks for your message! I will write you back!
             </span>
           )}
-      
         </form>
       </div>
-    <Navigation />
-      <Footer /> 
+      <Navigation />
+      <Footer />
     </section>
   );
 };

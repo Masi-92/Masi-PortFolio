@@ -1,15 +1,9 @@
-.parent{
-  
-  margin: 0% auto;
-
-}
-
 .experience__container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
 
 .experience__container > div {
     background: var(--color-bg-variant);
@@ -17,50 +11,53 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    margin-bottom: 2rem;
+    max-width: 800px;
 }
+
 .experience__container > div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
+
 .experience__container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
     color: var(--color-primary);
 }
+
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
-    text-align: center;
-  
-
+    column-gap: 2rem; 
+    justify-content: center; 
 }
+
 .experience__details {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
 }
+
 .experience__details-icon {
     margin-top: 6px;
     color: var(--color-primary);
+    font-size: 4rem; 
 }
-.experience__details_icon:hover{
 
-font-size: large;
-}
-.experience__details h4:hover{
+ .experience__details_icon:hover {
+     color: rgb(255, 255, 0);
+} 
+
+.experience__details h4:hover {
     color: rgb(255, 255, 0);
-    font-size: large;
+
 }
 
-@media screen and (max-width: 1024px){
-    .experience__container {
-        grid-template-columns: 1fr;
-    }
-
+@media screen and (max-width: 1024px) {
     .experience__container > div {
         width: 80%;
-        margin: 0 auto;
         padding: 2rem;
     }
 
@@ -68,12 +65,8 @@ font-size: large;
         padding: 1rem;
     }
 }
-  
-@media screen and (max-width: 600px){
-    .experience__container {
-        gap: 1rem;
-    }
 
+@media screen and (max-width: 600px) {
     .experience__container > div {
         width: 100%;
         padding: 2rem 1rem;
