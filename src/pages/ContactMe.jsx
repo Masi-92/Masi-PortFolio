@@ -39,7 +39,7 @@ const ContactMe = () => {
   );
 
   const errorMessage = (
-    <span style={{ color: 'yellow', fontWeight: 'bold' }}>
+    <span style={{ color: 'red', fontWeight: 'bold' }}>
       Please enter a valid email address and message.
     </span>
   );
@@ -62,7 +62,7 @@ const ContactMe = () => {
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
           <input type="text" placeholder="Your Full Name" name="user_name" required />
-          <input type="text" placeholder="Your Email" name="user_email" required />
+          <input type="email" placeholder="Your Email" name="user_email" required />
           <textarea placeholder="Your message" rows="7" name="message" required></textarea>
           <div className={contactStyle.contact__buttons}>
             <button type="submit" className={`${contactStyle.btn_content} `}>

@@ -26,13 +26,13 @@ const Footer = () => {
 </ul>
 <div className={footerStyle.footer__socials}>
 <Link to = 'https://github.com/Masi-92'> <FontAwesomeIcon  icon={faGithub}/></Link>
-<a href=""><FontAwesomeIcon icon={faFacebook}/></a>
-<a href=""><FontAwesomeIcon icon={faSquareInstagram}/></a>
+<Link to="#"><FontAwesomeIcon icon={faFacebook}/></Link>
+<Link to="#"><FontAwesomeIcon icon={faSquareInstagram}/></Link>
 
 
 </div>
 <div className={footerStyle.Date__Year}>
-        <small>&copy; ET {getYear()}. All rights reserved.</small>
+        <small> ET {getYear()}. All rights reserved.</small>
       </div>
   </footer>
   );
