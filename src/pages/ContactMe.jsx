@@ -14,9 +14,8 @@ const ContactMe = () => {
     e.preventDefault();
     const userEmail = e.target.user_email.value;
     const messageText = e.target.message.value;
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    if (!emailPattern.test(userEmail) || messageText.trim() === "") {
+    if (userEmail.trim() === "" || messageText.trim() === "" || !userEmail.includes('@')) {
       setError(true);
       setMessage(false);
     } else {

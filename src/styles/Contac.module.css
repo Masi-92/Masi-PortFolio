@@ -94,13 +94,12 @@ textarea {
   background-color: transparent;
   color: var(--color-primary);
   font-size: 1rem;
-  border-radius: 1rem;
+ 
 }
 .btn_content {
   display: inline-block;
   width: 10rem;
   padding: 0.05rem 0.0544rem;
-  border-radius: 1rem;
   color:  #b0a7a7;
   text-transform: uppercase;
   font-size: 1rem;
@@ -123,7 +122,6 @@ textarea {
   width: 100%;
   height: 100%;
   background-color: #2a2a9a;
-  border-radius: 1rem;
   z-index: -2;
 }
 
@@ -136,7 +134,6 @@ textarea {
   height: 100%;
   background-color:   #348ddf;
   transition: all 0.3s;
-  border-radius: 1rem;
   z-index: -1;
 }
 
