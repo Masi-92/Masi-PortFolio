@@ -21,7 +21,7 @@ const Navigation = () => {
               <NavLink
                 to={item.to}
                 style={({ isActive }) => ({
-                  color: isActive ? "#4db5ff" : "gray",
+                  color: isActive ? "#4de1ff" : "withe",
                   borderBottom: isActive ? "2px solid gray" : "none",
                 })}
               >

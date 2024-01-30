@@ -68,8 +68,12 @@ const HomePage = () => {
               </p>
               <div className={HeaderStyle.contact__buttons}>
                 <button type="submit" className={`${HeaderStyle.btn_content} `}>
-                  download cv
+                <a href="../assets/Resume/ResumeOfficial.pdf" download = "ResumeOfficial.pdf">
+      Download CV
+    </a>
                 </button>
+
+                
                 <button className={HeaderStyle.btn_content}>
                   <Link to="/contactMe">contact me</Link>
                 </button>

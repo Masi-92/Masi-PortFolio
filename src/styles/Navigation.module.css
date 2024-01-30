@@ -1,29 +1,30 @@
 
 .Nav_ulParent{
 
-    background: rgba(0, 0, 0, 0.128);
+    background: rgba(176, 155, 155, 0.128);
     width: max-content;
-    padding: 0.7rem 1.7rem;
+    padding: 0.rem .3rem;
     z-index: 2;
     position: fixed;
-    left: 95%;
-    top: 30%;
+    left:96%;
+    top:40%;
+    flex-direction: column;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
+    color:white;
     gap: 0.8rem;
     border-radius: 3rem;
 }
 
 .Nav_ulParent li a {
     background: transparent;
-    padding: 0.9rem;
+    padding: 0.7rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-light);
+    color:white;
     font-size: 1.1rem;
 }
 .Nav_ulParent li a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(163, 158, 158, 0.412);
 
 }
