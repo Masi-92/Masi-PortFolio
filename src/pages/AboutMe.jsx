@@ -30,7 +30,7 @@ const AboutMe = () => {
                   className={aboutMeStyle.about__icon}
                 />
                 <h5>Experience</h5>
-                <p>6 Months</p>
+                <p>1 year</p>
               </article>
               <article className={aboutMeStyle.about__card}>
                 <FontAwesomeIcon
@@ -38,7 +38,7 @@ const AboutMe = () => {
                   className={aboutMeStyle.about__icon}
                 />
                 <h5>Projects</h5>
-                <p>2 Completed Projects</p>
+                <p>5 Completed Projects</p>
               </article>
             </div>
             <p className={aboutMeStyle.textStyle}>

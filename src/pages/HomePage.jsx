@@ -25,9 +25,31 @@ const HomePage = () => {
           <div className={HeaderStyle.my__infos}>
             <div className={HeaderStyle.overlay}>
               <h5>Hello I'm</h5>
-              <h1>Masoud Izadi</h1>
+              <h2>Masoud Izadi</h2>
+              <h3 className={`${HeaderStyle.span} ${HeaderStyle.loader}`}>
 
-              <p>Frontend Web Developer</p>
+        <span className={HeaderStyle.m}>F</span>
+        <span className={HeaderStyle.m}>U</span>
+        <span className={HeaderStyle.m}>L</span>
+        <span className={HeaderStyle.m}>L</span>
+        <span className={HeaderStyle.m}>S</span>
+        <span className={HeaderStyle.m}>T</span>
+        <span className={HeaderStyle.m}>A</span>
+        <span className={HeaderStyle.m}>C</span>
+        <span className={HeaderStyle.m}>K</span>
+        <span className={HeaderStyle.m}>D</span>
+        <span className={HeaderStyle.m}>E</span>
+        <span className={HeaderStyle.m}>V</span>
+        <span className={HeaderStyle.m}>E</span>
+        <span className={HeaderStyle.m}>L</span>
+        <span className={HeaderStyle.m}>O</span>
+        <span className={HeaderStyle.m}>P</span>
+        <span className={HeaderStyle.m}>E</span>
+        <span className={HeaderStyle.m}>R</span>
+      
+    </h3>
+
+              
             </div>
             <img
               src={MG3}
