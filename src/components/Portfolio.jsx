@@ -1,6 +1,8 @@
 import portStyle from "../styles/Portfolio.module.css";
 import IMG1 from "../Images/easyliefer.png";
 import IMG2 from "../Images/alpaca.png";
+import IMG3 from "../Images/moviLand.png";
+import IMG4 from "../Images/Hischool.png";
 import Layout from "../Layout/Layout";
 //import Navigation from './Navigation'
 //import { Link } from "react-router-dom";
@@ -21,7 +23,8 @@ function Portfolio() {
       id: 2,
       title: "Alpaca",
       Imag: IMG2,
-      description: " Alpacas (vicugña pacos) are members of the Camelid Family and are a domesticated species of the South American camelid.",
+      description:
+        "Alpacas (Vicugna pacos) belong to the Camelid family and are a domesticated species of South American camelids.",
       technologies: "css / scss / Js / React",
       github: "https://github.com/Masi-92/alpaca-project",
       link: "https://masi-92.github.io/alpaca-project/",
@@ -29,17 +32,19 @@ function Portfolio() {
     {
       id: 3,
       title: "MovieLand",
-      Imag: IMG2,
-      description: " Alpacas (vicugña pacos) are members of the Camelid Family and are a domesticated species of the South American camelid.",
+      Imag: IMG3,
+      description:
+        " Unter Einsatz einer klaren Rollenverteilung und einem sicheren Anmelde- und Registrierungssystem hat der Administrator exklusive Befugnisse, um Filme hinzuzufügen, zu löschen und zu bearbeiten. Als Nutzer der Anwendung kann man Filme erwerben, in Favoriten aufnehmen und das Angebot erkunden..",
       technologies: "css / scss / React / Node.js",
       github: "https://github.com/Masi-92/alpaca-project",
-      link: "https://masi-92.github.io/alpaca-project/",
+      link: "",
     },
     {
       id: 4,
       title: "HiSchool",
-      Imag: IMG2,
-      description: " Alpacas (vicugña pacos) are members of the Camelid Family and are a domesticated species of the South American camelid.",
+      Imag: IMG4,
+      description:
+        " Alpacas (vicugña pacos) are members of the Camelid Family and are a domesticated species of the South American camelid.",
       technologies: "css / scss / React / Node.js",
       github: "https://github.com/Masi-92/alpaca-project",
       link: "https://masi-92.github.io/alpaca-project/",
