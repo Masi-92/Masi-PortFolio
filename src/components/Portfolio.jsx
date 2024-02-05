@@ -36,7 +36,7 @@ function Portfolio() {
       description:
         " Unter Einsatz einer klaren Rollenverteilung und einem sicheren Anmelde- und Registrierungssystem hat der Administrator exklusive Befugnisse, um Filme hinzuzufügen, zu löschen und zu bearbeiten. Als Nutzer der Anwendung kann man Filme erwerben, in Favoriten aufnehmen und das Angebot erkunden..",
       technologies: "css / scss / React / Node.js",
-      github: "https://github.com/Masi-92/alpaca-project",
+      github: "https://github.com/Masi-92/EndProjct-Back",
       link: "",
     },
     {
@@ -46,8 +46,8 @@ function Portfolio() {
       description:
         " Alpacas (vicugña pacos) are members of the Camelid Family and are a domesticated species of the South American camelid.",
       technologies: "css / scss / React / Node.js",
-      github: "https://github.com/Masi-92/alpaca-project",
-      link: "https://masi-92.github.io/alpaca-project/",
+      github: "https://github.com/Masi-92/Final-Project-DCI",
+      link: "",
     },
   ];
 
