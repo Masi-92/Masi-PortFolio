@@ -44,10 +44,11 @@ function Portfolio() {
       title: "HiSchool",
       Imag: IMG4,
       description:
-        " Alpacas (vicugña pacos) are members of the Camelid Family and are a domesticated species of the South American camelid.",
+        
+        "HiSchool ist eine App für Bildungseinrichtungen, die die Kommunikation zwischen Schulpersonal und Eltern erleichtert. Sie ermöglicht direkten Nachrichtenaustausch, Updates, Ereigniserstellung, Bild- und Dokumentenupload sowie Krankmeldungen.",
       technologies: "css / scss / React / Node.js",
       github: "https://github.com/Masi-92/Final-Project-DCI",
-      link: "",
+      link: "https://hischool-475h.onrender.com",
     },
   ];
 
