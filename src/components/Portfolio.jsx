@@ -2,7 +2,7 @@ import portStyle from "../styles/Portfolio.module.css";
 import IMG1 from "../Images/easyliefer.png";
 import IMG2 from "../Images/alpaca.png";
 import IMG3 from "../Images/moviLand.png";
-import IMG4 from "../Images/Hischool.png";
+import IMG4 from "../Images/hischoll2.png";
 import Layout from "../Layout/Layout";
 //import Navigation from './Navigation'
 //import { Link } from "react-router-dom";
