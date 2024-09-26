@@ -47,7 +47,7 @@ function Portfolio() {
         
         "HiSchool ist eine App für Bildungseinrichtungen, die die Kommunikation zwischen Schulpersonal und Eltern erleichtert. Sie ermöglicht direkten Nachrichtenaustausch, Updates, Ereigniserstellung, Bild- und Dokumentenupload sowie Krankmeldungen.",
       technologies: "css / scss / React / Node.js",
-      github: "https://github.com/Masi-92/Final-Project-DCI",
+      github: "https://github.com/Masi-92/my-hischool.2.git",
       link: "https://hischool-475h.onrender.com",
     },
   ];
