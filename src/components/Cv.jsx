@@ -1,4 +1,4 @@
-import url from "../assets/Resume/Resume.pdf";
+import url from "../assets/Resume/CV.pdf";
 
 import HeaderStyle from "../styles/Home.module.css";
 
