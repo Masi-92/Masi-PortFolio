@@ -1,8 +1,15 @@
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
 .experience__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+display: flex;
+flex-direction: row !important;
+align-items: center;
+justify-content: center;
 }
 
 .experience__container > div {
@@ -13,12 +20,14 @@
     transition: var(--transition);
     margin-bottom: 2rem;
     max-width: 800px;
+    font-size: large;
 }
 
 .experience__container > div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    font-size: larger;
 }
 
 .experience__container > div h3 {
@@ -33,6 +42,7 @@
     justify-content: center; 
 }
 
+
 .experience__details {
     display: flex;
     flex-direction: column;
@@ -43,7 +53,7 @@
 .experience__details-icon {
     margin-top: 6px;
     color: var(--color-primary);
-    font-size: 4rem; 
+    font-weight: 900;
 }
 
  .experience__details_icon:hover {
